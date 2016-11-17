@@ -1,0 +1,75 @@
+#wrapper {
+	
+	}
+.wrap {
+	max-width: 50em;
+	margin: 0 auto;
+	}
+main {
+	padding-top: 10em;
+	}
+
+/* TO DO general */
+.mod-todo {
+	padding: 2em;
+	}
+.mod-todo .container {
+	padding: 1em;
+	margin-bottom: 1.4em;
+	background: #fff;
+	border-radius: .5em;
+	}
+.mod-todo .form-row {
+	margin-bottom: 0
+	}
+.mod-todo .form-element {
+	float: left;
+	width: 70%;
+	display: block;
+	}
+.mod-todo .form-element--field {
+	font-size: 2em;
+	}
+.mod-todo .form-element--field,
+.mod-todo .form-element-btn {
+	padding: 1em;
+	}
+	
+.mod-todo .form-element-btn {
+	border-radius: .5em;
+	font-weight: bold;
+	border: 0;
+	/* Permalink http://colorzilla.com/gradient-editor/#cdeb8e+0,a5c956+100;Green+3D+%232 */
+	background: #cdeb8e; 
+	background: -moz-linear-gradient(top,  #cdeb8e 0%, #a5c956 100%); 
+	background: -webkit-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); 
+	background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%); 
+	}
+.mod-todo .form-element-btn:active {
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+	}
+.mod-todo .form-element-btn:hover,
+.mod-todo .form-element-btn:focus {
+	/* Permalink http://colorzilla.com/gradient-editor/#c0d883+0,cdeb8e+100 */
+	background: #c0d883;
+	background: -moz-linear-gradient(top, #c0d883 0%, #cdeb8e 100%);
+	background: -webkit-linear-gradient(top, #c0d883 0%,#cdeb8e 100%);
+	background: linear-gradient(to bottom, #c0d883 0%,#cdeb8e 100%);
+	cursor: pointer;
+	}
+.mod-todo .form-element.btn--add {
+	width: 25%;
+	display: inline-block;
+	float: right;
+	}
+.mod-todo .form-element.btn--rm {
+	width: 100%;
+	background: #e06666;
+	}
+.mod-todo .form-element.btn--rm:hover,
+.mod-todo .form-element.btn--rm:focus {
+	background: #d03a3a;
+	}
+.mod-todo .form-element.btn--rm {
+	color: #fff;
+	}

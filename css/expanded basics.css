@@ -1,0 +1,42 @@
+/*  basics.css // additional classes 
+--------------------------------------------------------------- */
+
+a[href^="https://www.google.com/maps/"]::before,
+a[href^="http://www.google.com/maps/"]::before,
+a[href^="https://maps.google.com/"]::before,
+a[href^="http://maps.google.com/"]::before,
+a.download-icn::before
+
+
+a[href^="https://www.google.com/maps/"]:before,
+a[href^="http://www.google.com/maps/"]:before,
+a[href^="https://maps.google.com/"]:before,
+a[href^="http://maps.google.com/"]:before {
+	content: "\f041";
+	}
+a.download-icn::before {
+    content: "\f019";
+	}
+
+/* =global classes
+--------------------------------------------------------------- */
+.none {
+	display: none;
+	}
+.nomargin,
+[class*="col-"].nomargin {
+	margin: 0;
+	}
+.nopadding,
+[class*="col-"].nopadding {
+	padding: 0;
+	}
+
+.right,
+[class*="col-"].right {
+	float: right;
+	}
+.left,
+[class*="col-"].left {
+	float: left
+	}

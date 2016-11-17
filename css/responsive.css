@@ -1,0 +1,74 @@
+@media only screen and (max-width: 48em) { /* 768/16 */
+	
+	
+	
+}
+
+@media only screen and (max-width: 32.5em) { /* 520/16 */
+
+	/* =basics
+	--------------------------------------------------------------- */
+	.header, .container, .main, .mainnav, .sidebar, .footer {
+		position: static;
+		float: none;
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		background-image: none;
+		}
+		
+	.alignleft,
+	.alignright {
+		float: none;
+		display: block;
+		max-width: 100%;
+		margin: 1.5em 0; /* adapt to .col-margin of grid-system */
+		}
+
+	.table-responsive {
+		border: 1px solid #dcdfde;
+		border-bottom: 0;
+		}
+
+	/* =global layout
+	--------------------------------------------------------------- */
+	.wrapper {
+		width: 96%;
+		}
+
+	/* =header
+	--------------------------------------------------------------- */
+	
+
+	/* =content
+	--------------------------------------------------------------- */
+	
+		
+	/* =sidebar
+	--------------------------------------------------------------- */
+	
+		
+	/* =nav
+	--------------------------------------------------------------- */
+	
+
+	/* =footer
+	--------------------------------------------------------------- */
+	
+
+}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (   min--moz-device-pixel-ratio: 1.5),
+	only screen and (     -o-min-device-pixel-ratio: 3/2),
+	only screen and (        min-device-pixel-ratio: 1.5),
+	only screen and (                min-resolution: 144dpi), /* responsible for IE9-Bug */
+	only screen and (                min-resolution: 1.5dppx) /* responsible for FF-Mobile-Bug */
+	
+																{
+	
+	
+	
+}

@@ -1,0 +1,6 @@
+legend {
+	margin-bottom: 10px; /*IE form margin bug*/ 
+	}
+img {
+	-ms-interpolation-mode: bicubic;
+	}
