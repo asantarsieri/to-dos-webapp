@@ -11,7 +11,9 @@ input[type="search"] {
 	}
 body {
 	font: 1em/1.5 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
-	background: #ccc;
+	background: url(../pictures/surfboardoffice.jpg) no-repeat fixed center;
+	/*background: url(../pictures/coffe_and_agenda.jpg) no-repeat fixed center;*/
+	background-size: cover;	
 	}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -22,6 +24,7 @@ h1, .h1 {
 	font-size: 3em;
 	border-bottom: 1px solid #fff;
 	text-shadow: 1px 1px 0px #fff;
+	font-weight: 400;
 	}
 h2, .h2 {
 	font-size: 1.33em;
