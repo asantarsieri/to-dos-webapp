@@ -2,5 +2,5 @@
 .DS_Store
 
 # Espresso
-.esproj
-.espressostorage
+*.esproj
+*.espressostorage
