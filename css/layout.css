@@ -1,3 +1,16 @@
+/*
+Kuler: https://goo.gl/vuitVq
+
+green bright	#4ecc8d
+green dark		#3a9954
+orange			#e57312
+red bright		#cc3935
+red dark		#b2202e
+
+*/
+
+/* =global
+--------------------------------------------------------------- */
 #wrapper {
 	
 	}
@@ -5,75 +18,145 @@
 	max-width: 50em;
 	margin: 0 auto;
 	}
+
+/* =header
+--------------------------------------------------------------- */
+header {
+	background: rgba(255,255,255,.9);
+	width: 100%;
+	box-shadow: 0px 0px .5em rgba(0,0,0,.35);
+	}
+.titlecontainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 2em 0;
+	}
+.titlecontainer h1,
+.titlecontainer h2 {
+	margin: 0;
+	}
+/* =main
+--------------------------------------------------------------- */
 main {
-	padding-top: 10em;
+	padding-top: 2vh;
 	}
 
-/* TO DO general */
+/* =module/app "to-dos"
+--------------------------------------------------------------- */
+
+/* global
+--------------------------------------------------------------- */
 .mod-todo {
-	/*padding: 2em;*/
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 0 5000px rgba(255, 255, 255, 0.5)
 	}
 .mod-todo .container {
 	padding: 1em;
-	margin-bottom: 1.4em;
-	background: #fff;
-	border-radius: .5em;
-	}
-.mod-todo > fieldset {
-	box-shadow: 0 0 0 5000px rgba(255, 255, 255, 0.4)
-	}
-.mod-todo .form-row {
-	margin-bottom: 0
-	}
-.mod-todo .form-element {
-	float: left;
-	width: 70%;
-	display: block;
-	}
-.mod-todo .form-element--field {
-	font-size: 2em;
-	}
-.mod-todo .form-element--field,
-.mod-todo .form-element-btn {
-	padding: 1em;
-	}
-	
-.mod-todo .form-element-btn {
+	background: rgba(255, 255, 255, 0.95);
+	border: 1px solid rgba(0,0,0,.5);
 	border-radius: .25em;
-	font-weight: bold;
-	border: 0;
-	/* Permalink http://colorzilla.com/gradient-editor/#cdeb8e+0,a5c956+100;Green+3D+%232 */
-	background: #cdeb8e; 
-	background: -moz-linear-gradient(top,  #cdeb8e 0%, #a5c956 100%); 
-	background: -webkit-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); 
-	background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%); 
 	}
-.mod-todo .form-element-btn:active {
-	box-shadow: inset 0 1px .35em rgba(0,0,0,.3);
-	color: inherit;
+.form-element-btn[type="reset"]:hover {
+	background: #b2202e;
 	}
-.mod-todo .form-element-btn:hover,
-.mod-todo .form-element-btn:focus {
-	/* Permalink http://colorzilla.com/gradient-editor/#c0d883+0,cdeb8e+100 */
-	background: #c0d883;
-	background: -moz-linear-gradient(top, #c0d883 0%, #cdeb8e 100%);
-	background: -webkit-linear-gradient(top, #c0d883 0%,#cdeb8e 100%);
-	background: linear-gradient(to bottom, #c0d883 0%,#cdeb8e 100%);
+.form-element--input {
+	padding: .35em .25em;
+	font-size: 1.5em;
+	font-family: 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
+	font-weight: 300;
+	box-shadow: 0;
+	}
+.form-element-btn {
+	display: inline-block;
+	padding: .5em 1em;
+	color: #fff;
+	text-decoration: none;
+	border-radius: .25em;
+	border: 1px solid rgba(0,0,0,.2);
+	text-align: center;
+	line-height: normal;
 	cursor: pointer;
 	}
-.mod-todo .form-element.btn--add {
-	width: 25%;
-	display: inline-block;
-	float: right;
+.form-element-btn:active {
+	box-shadow: inset 0 2px .25em rgba(0,0,0,.35);
 	}
-.mod-todo .form-element.btn--rm {
-	width: 100%;
-	background: #e06666;
+.form-element-btn:hover,
+.form-element-btn:focus {
+
 	}
-.mod-todo .form-element.btn--rm:hover,
-.mod-todo .form-element.btn--rm:focus {
-	background: #d03a3a;
+.form-element input[type=checkbox]:hover {
+	cursor: pointer;
 	}
-.mod-todo .form-element.btn--rm {
+
+/* todo-add
+--------------------------------------------------------------- */
+.todo-add .form-row {
+	display: flex;
+	flex-direction: row;
+	}
+.todo-add .form-element--todo {
+	margin-right: .5rem;
+	}
+.todo-add .form-func--btn_container {
+	display: flex;
+	justify-content: space-between;
+	}
+.todo-add .form-func--btn_container .form-element-btn {
+	width: 45%;
+	margin-left: .5rem;
+	}
+.todo-add .btn--add {
+	background: #4ecc8d;
+	}
+.todo-add .btn--add:hover {
+	background: #3a9954;
+	}
+
+
+	
+/* todo-lst
+--------------------------------------------------------------- */	
+
+.btn--rm_all {
+	/*background: #cc3935;*/
+	}
+.form-element.btn--rm_all:hover,
+.form-element.btn--rm_all:focus {
+	background: #b2202e;
+	}
+.form-element.btn--rm_all {
 	color: #fff;
+	}
+
+/* todo-clear 
+--------------------------------------------------------------- */	
+.todo-clear--all .btn--rm_all {
+	width: 100%;
+	background: #cc3935;
+	}
+
+/* =placeholder hack
+--------------------------------------------------------------- */
+/* do not combine/minify the rules! */
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #000;
+    opacity: .35;
+    font-family: 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
+    font-weight: 300;
+	}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #000;
+    opacity: .35;
+    font-family: 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
+	}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #000;
+    opacity: .35;
+    font-family: 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
+	}
+$input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #000;
+    opacity: .35;
+    font-family: 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
 	}
