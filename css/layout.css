@@ -11,7 +11,7 @@ main {
 
 /* TO DO general */
 .mod-todo {
-	padding: 2em;
+	/*padding: 2em;*/
 	}
 .mod-todo .container {
 	padding: 1em;
@@ -20,8 +20,8 @@ main {
 	border-radius: .5em;
 	}
 .mod-todo > fieldset {
-	box-shadow: 0 0 0 5000px rgba(255, 255, 255, 0.3)
-}
+	box-shadow: 0 0 0 5000px rgba(255, 255, 255, 0.4)
+	}
 .mod-todo .form-row {
 	margin-bottom: 0
 	}
