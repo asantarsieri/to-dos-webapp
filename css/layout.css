@@ -44,6 +44,9 @@ main {
 
 /* =module/app "to-dos"
 --------------------------------------------------------------- */
+.form-row.cf label {
+	display: block;
+	}
 
 /* global
 --------------------------------------------------------------- */
@@ -113,29 +116,51 @@ main {
 	background: #3a9954;
 	}
 
-
 	
 /* todo-lst
 --------------------------------------------------------------- */	
-
-.btn--rm_all {
-	/*background: #cc3935;*/
+.todo-lst .form-row {
+	margin-bottom: 0;
+	padding: .5em .25em;
+	display: block;
 	}
-.form-element.btn--rm_all:hover,
-.form-element.btn--rm_all:focus {
-	background: #b2202e;
+.todo-entry--rm_single {
+	
 	}
-.form-element.btn--rm_all {
-	color: #fff;
+.todo-entry--checkbox,
+.todo-entry--rm_single {
+	text-align: center;
 	}
-
+.todo-entry--time {
+	text-align: right;
+	}
+.todo-entry:hover .todo-entry--rm_single {
+	display: block;
+	}
+.todo-entry--rm_single {
+	color: #b2202e;
+	display: none;
+	}
+.todo-entry--rm_single:hover,
+.todo-entry--rm_single:focus {
+	color: #cc3935;
+	cursor: pointer;
+	}
+	
+	
 /* todo-clear 
 --------------------------------------------------------------- */	
 .todo-clear--all .btn--rm_all {
 	width: 100%;
 	background: #cc3935;
 	}
-
+.form-element.btn--rm_all {
+	color: #fff;
+	}
+.form-element.btn--rm_all:hover,
+.form-element.btn--rm_all:focus {
+	background: #b2202e;
+	}
 /* =placeholder hack
 --------------------------------------------------------------- */
 /* do not combine/minify the rules! */
