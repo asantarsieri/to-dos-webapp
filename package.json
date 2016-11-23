@@ -1,0 +1,24 @@
+{
+  "name": "to-dos-webapp",
+  "version": "0.1.0",
+  "description": "to-do webapp for testing purposes webprofessionals",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asantarsieri/to-dos-webapp.git"
+  },
+  "author": "Andreas Santarsieri @asantarsieri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asantarsieri/to-dos-webapp/issues"
+  },
+  "homepage": "https://github.com/asantarsieri/to-dos-webapp#readme"
+}

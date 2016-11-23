@@ -1,0 +1,22 @@
+/* ***********************************************************************************
+FileName	: screen.css
+Date		: 14.11.2016
+Author		: asantarsieri
+Purpose		: framework / neutral boilerplate
+*********************************************************************************** */
+// @import url(normalize.css);
+// @import url(basics.css);
+// @import url(expanded basics.css);
+// @import url(application.css);
+// @import url(layout.css);
+// @import url(responsive.css);
+// @import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
+
+
+@import 'normalize';
+@import 'basics';
+@import 'expanded_basics';
+@import 'application';
+@import 'layout';
+@import 'responsive';
+@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
