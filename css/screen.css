@@ -1027,6 +1027,9 @@ a.download-icn::before {
 /* new css-y comment to check compiled css dd */
 /* =global
 --------------------------------------------------------------- */
+body {
+  /* test compiler 3 */ }
+
 .wrap {
   max-width: 50em;
   margin: 0 auto; }
