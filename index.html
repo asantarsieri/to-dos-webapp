@@ -8,8 +8,6 @@
 		<meta name="theme-color" content="#54ca00">
 		<title>My to-dos</title>
 		<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen">
-		
-		
 	</head>
 
 	<body>
@@ -22,63 +20,74 @@
 			</header>
 			<div class="wrap">
 				<main>
-					<div class="mod-wrapper mod-todo">
-						<fieldset class="container todo-add">
-							<legend>What's up next?</legend>
-							<div class="form-row cf">
-								<input class="form-element form-element--input form-element--todo col-7" type="text" placeholder="add new to-do">
-								<input class="form-element form-element--input form-element--date col-3" type="date">
-								<div class="form-func form-func--btn_container col-2">
-									<button class="form-element form-element-btn btn--add" type="submit"><em aria-hidden="true" class="fa fa-fw fa-plus">&#8202;</em></button>
-									<button class="form-element form-element-btn btn--clear" type="reset"><em aria-hidden="true" class="fa fa-fw fa-ban">&#8202;</em></button>
+					<div class="mod-wrapper todo">
+						<!-- add items -->
+						<form class="form todo-add">
+							<fieldset class="todo__container">
+								<legend>What's up next?</legend>
+								<div class="form-row cf">
+									<input class="form__element form__element-input form__element-input-todo col-7" type="text" placeholder="add new to-do">
+									<input class="form__element form__element-input form__element-input-date col-3" type="date">
+									<div class="form-func col-2">
+										<button class="form__element form__element-btn form__element-btn--add" type="submit"><em aria-hidden="true" class="fa fa-fw fa-plus">&#8202;</em></button>
+										<button class="form__element form__element-btn form__element-btn--clear" type="reset"><em aria-hidden="true" class="fa fa-fw fa-ban">&#8202;</em></button>
+									</div>
 								</div>
-							</div>
-							<p class="form-hint">What you want to do &ndash; and until when.</p>
-						</fieldset>
-						<fieldset class="container todo-lst">
+								<p class="form__element form__element-hint">What you want to do &ndash; and until when.</p>
+							</fieldset>
+						</form>
+						
+						<!-- end add items -->
+
+						<!-- list of items -->
+						<fieldset class="todo__container task__lst">
 							<legend>The agony of choice.</legend>
-							<ul class="reset zebra">
-								<li class="todo-entry todo-entry--done">
+							<ul class="reset zebra task__entries">
+								<li class="task__entry task__entry-done">
 									<p class="form-row cf">
-										<span class="todo-entry--checkbox col-1"><input type="checkbox" id="testid1"></span>
-										<span class="todo-entry--desc col-8"><label for="testid1">Finish app</label></span>
-										<span class="todo-entry--time col-2">24.12.2016</span>
-										<a class="todo-entry--rm_single col-1" href="#"><em aria-hidden="true" class="fa fa-fw fa-times">&#8202;</em></a>
+										<span class="task__entry-checkbox col-1"><input class="form__element" type="checkbox" id="testid1"></span>
+										<span class="task__entry-desc col-8"><label for="testid1">Finish app</label></span>
+										<span class="task__entry-time col-2">24.12.2016</span>
+										<a class="task__entry-rm col-1" href="#"><em aria-hidden="true" class="fa fa-fw fa-times">&#8202;</em></a>
 									</p>
 								</li>
-								<li class="todo-entry todo-entry--done">
+								<li class="task__entry task__entry-done">
 									<p class="form-row cf">
-										<span class="todo-entry--checkbox col-1"><input type="checkbox" id="testid2"></span>
-										<span class="todo-entry--desc col-8"><label for="testid2">Do whatever for whoever, whenever.</label></span>
-										<span class="todo-entry--time col-2">24.12.2016</span>
-										<a class="todo-entry--rm_single col-1" href="#"><em aria-hidden="true" class="fa fa-fw fa-times">&#8202;</em></a>
+										<span class="task__entry-checkbox col-1"><input class="form__element" type="checkbox" id="testid2"></span>
+										<span class="task__entry-desc col-8"><label for="testid1">Do whatever for whoever, whenever.</label></span>
+										<span class="task__entry-time col-2">24.12.2016</span>
+										<a class="task__entry-rm col-1" href="#"><em aria-hidden="true" class="fa fa-fw fa-times">&#8202;</em></a>
 									</p>
 								</li>
-								<li class="todo-entry todo-entry--done">
+								<li class="task__entry task__entry-done">
 									<p class="form-row cf">
-										<span class="todo-entry--checkbox col-1"><input type="checkbox" id="testid3"></span>
-										<span class="todo-entry--desc col-8"><label for="testid3">Lorem ipsum dolor sit amet</label></span>
-										<span class="todo-entry--time col-2">24.12.2016</span>
-										<a class="todo-entry--rm_single col-1" href="#"><em aria-hidden="true" class="fa fa-fw fa-times">&#8202;</em></a>
+										<span class="task__entry-checkbox col-1"><input class="form__element" type="checkbox" id="testid3"></span>
+										<span class="task__entry-desc col-8"><label for="testid1">Lorem ipsum dolor sit amet.</label></span>
+										<span class="task__entry-time col-2">24.12.2016</span>
+										<a class="task__entry-rm col-1" href="#"><em aria-hidden="true" class="fa fa-fw fa-times">&#8202;</em></a>
 									</p>
 								</li>
-								<li class="todo-entry todo-entry--done">
+								<li class="task__entry task__entry-done">
 									<p class="form-row cf">
-										<span class="todo-entry--checkbox col-1"><input type="checkbox" id="testid4"></span>
-										<span class="todo-entry--desc col-8"><label for="testid4">The brown fox jumps over the lazy dog.</label></span>
-										<span class="todo-entry--time col-2">24.12.2016</span>
-										<a class="todo-entry--rm_single col-1" href="#"><em aria-hidden="true" class="fa fa-fw fa-times">&#8202;</em></a>
+										<span class="task__entry-checkbox col-1"><input class="form__element" type="checkbox" id="testid4"></span>
+										<span class="task__entry-desc col-8"><label for="testid1">The brown fox jumps over the lazy dog.</label></span>
+										<span class="task__entry-time col-2">24.12.2016</span>
+										<a class="task__entry-rm col-1" href="#"><em aria-hidden="true" class="fa fa-fw fa-times">&#8202;</em></a>
 									</p>
 								</li>
 							</ul>
 						</fieldset>
-						<fieldset class="container todo-clear--all">
+						<!-- end list of items -->
+						
+						<!-- clear all -->
+						<fieldset class="todo__container task__clear">
 							<legend>Feeling lucky today &hellip;</legend>
 							<div class="form-row cf">
-								<button class="form-element form-element-btn btn--rm_all" type="submit"><em aria-hidden="true" class="fa fa-fw fa-trash">&#8202;</em>remove all <span class="add-joke">(and grab a <em aria-hidden="true" class="fa fa-fw fa-beer">&#8202;</em>)</span></button>
+								<button class="form__element form__element-btn form__element form__element-btn--rm_all" type="submit"><em aria-hidden="true" class="fa fa-fw fa-trash">&#8202;</em>remove all <span class="add-joke">(and grab a <em aria-hidden="true" class="fa fa-fw fa-beer">&#8202;</em>)</span></button>
 							</div>
-							<p class="form-hint">Pushing this button will remove all items in the list. After this, you'll need a beer anyway.</p>
+							<p class="form__element form__element-hint">Pushing this button will remove all items in the list. After this, you'll need a beer anyway.</p>
 						</fieldset>
+						<!-- end clear all -->
 					</div>
 				</main>
 			</div>
