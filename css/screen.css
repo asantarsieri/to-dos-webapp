@@ -5,660 +5,576 @@ Date		: 14.11.2016
 Author		: asantarsieri
 Purpose		: framework / neutral boilerplate
 *********************************************************************************** */
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-/**
+@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i,700,700i");
+@media screen {
+  /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+  /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-/* Document
+  /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i,700,700i");
-@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
-html {
-  font-family: sans-serif;
-  /* 1 */
-  line-height: 1.15;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */ }
-
-/* Sections
+  html {
+    font-family: sans-serif;
+    /* 1 */
+    line-height: 1.15;
+    /* 2 */
+    -ms-text-size-adjust: 100%;
+    /* 3 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */ }
+  /* Sections
    ========================================================================== */
-/**
+  /**
  * Remove the margin in all browsers (opinionated).
  */
-body {
-  margin: 0; }
-
-/**
+  body {
+    margin: 0; }
+  /**
  * Add the correct display in IE 9-.
  */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block; }
-
-/**
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section {
+    display: block; }
+  /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/* Grouping content
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0; }
+  /* Grouping content
    ========================================================================== */
-/**
+  /**
  * Add the correct display in IE 9-.
  * 1. Add the correct display in IE.
  */
-figcaption,
-figure,
-main {
-  /* 1 */
-  display: block; }
-
-/**
+  figcaption,
+  figure,
+  main {
+    /* 1 */
+    display: block; }
+  /**
  * Add the correct margin in IE 8.
  */
-figure {
-  margin: 1em 40px; }
-
-/**
+  figure {
+    margin: 1em 40px; }
+  /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
-
-/**
+  hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */ }
+  /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/* Text-level semantics
+  pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */ }
+  /* Text-level semantics
    ========================================================================== */
-/**
+  /**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */ }
-
-/**
+  a {
+    background-color: transparent;
+    /* 1 */
+    -webkit-text-decoration-skip: objects;
+    /* 2 */ }
+  /**
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
-a:active,
-a:hover {
-  outline-width: 0; }
-
-/**
+  a:active,
+  a:hover {
+    outline-width: 0; }
+  /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
-
-/**
+  abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */ }
+  /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-b,
-strong {
-  font-weight: inherit; }
-
-/**
+  b,
+  strong {
+    font-weight: inherit; }
+  /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-b,
-strong {
-  font-weight: bolder; }
-
-/**
+  b,
+  strong {
+    font-weight: bolder; }
+  /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/**
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */ }
+  /**
  * Add the correct font style in Android 4.3-.
  */
-dfn {
-  font-style: italic; }
-
-/**
+  dfn {
+    font-style: italic; }
+  /**
  * Add the correct background and color in IE 9-.
  */
-mark {
-  background-color: #ff0;
-  color: #000; }
-
-/**
+  mark {
+    background-color: #ff0;
+    color: #000; }
+  /**
  * Add the correct font size in all browsers.
  */
-small {
-  font-size: 80%; }
-
-/**
+  small {
+    font-size: 80%; }
+  /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sub {
-  bottom: -0.25em; }
-
-sup {
-  top: -0.5em; }
-
-/* Embedded content
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  sub {
+    bottom: -0.25em; }
+  sup {
+    top: -0.5em; }
+  /* Embedded content
    ========================================================================== */
-/**
+  /**
  * Add the correct display in IE 9-.
  */
-audio,
-video {
-  display: inline-block; }
-
-/**
+  audio,
+  video {
+    display: inline-block; }
+  /**
  * Add the correct display in iOS 4-7.
  */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
+  audio:not([controls]) {
+    display: none;
+    height: 0; }
+  /**
  * Remove the border on images inside links in IE 10-.
  */
-img {
-  border-style: none; }
-
-/**
+  img {
+    border-style: none; }
+  /**
  * Hide the overflow in IE.
  */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* Forms
+  svg:not(:root) {
+    overflow: hidden; }
+  /* Forms
    ========================================================================== */
-/**
+  /**
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
-
-/**
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: sans-serif;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */ }
+  /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-button,
-input {
-  /* 1 */
-  overflow: visible; }
-
-/**
+  button,
+  input {
+    /* 1 */
+    overflow: visible; }
+  /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-button,
-select {
-  /* 1 */
-  text-transform: none; }
-
-/**
+  button,
+  select {
+    /* 1 */
+    text-transform: none; }
+  /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */ }
-
-/**
+  button,
+  html [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */ }
+  /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-/**
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0; }
+  /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
-
-/**
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText; }
+  /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/**
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em; }
+  /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */ }
-
-/**
+  legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */ }
+  /**
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
-
-/**
+  progress {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */ }
+  /**
  * Remove the default vertical scrollbar in IE.
  */
-textarea {
-  overflow: auto; }
-
-/**
+  textarea {
+    overflow: auto; }
+  /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+  /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto; }
+  /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */ }
-
-/**
+  [type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */ }
+  /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
+  [type="search"]::-webkit-search-cancel-button,
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
-
-/* Interactive
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */ }
+  /* Interactive
    ========================================================================== */
-/*
+  /*
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
-details,
-menu {
-  display: block; }
-
-/*
+  details,
+  menu {
+    display: block; }
+  /*
  * Add the correct display in all browsers.
  */
-summary {
-  display: list-item; }
-
-/* Scripting
+  summary {
+    display: list-item; }
+  /* Scripting
    ========================================================================== */
-/**
+  /**
  * Add the correct display in IE 9-.
  */
-canvas {
-  display: inline-block; }
-
-/**
+  canvas {
+    display: inline-block; }
+  /**
  * Add the correct display in IE.
  */
-template {
-  display: none; }
-
-/* Hidden
+  template {
+    display: none; }
+  /* Hidden
    ========================================================================== */
-/**
+  /**
  * Add the correct display in IE 10-.
  */
-[hidden] {
-  display: none; }
-
-/* =webfonts
+  [hidden] {
+    display: none; }
+  /* =colors
 --------------------------------------------------------------- */
-*,
-*:before,
-*:after,
-input[type="search"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  font: 1em/1.5 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
-  background: url(../pictures/surfboardoffice.jpg) center 10em no-repeat fixed;
-  background-size: cover;
-  /*background: url(../pictures/coffe_and_agenda.jpg) no-repeat fixed center;*/ }
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: 0 0 0.75em;
-  line-height: 1.2; }
-
-h1, .h1 {
-  font-size: 5em;
-  border-bottom: 1px solid #fff;
-  text-shadow: 1px 1px 0px #fff;
-  font-weight: 300; }
-
-h2, .h2 {
-  font-size: 1.5em;
-  font-weight: 300; }
-
-h3, .h3 {
-  font-size: 1.17em; }
-
-h4, .h4 {
-  font-size: 1em; }
-
-h5, .h5 {
-  margin: 0 0 0.4em;
-  font-size: 1em; }
-
-h6, .h6 {
-  margin: 0 0 0.2em;
-  font-size: 1em; }
-
-p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
-.box, .table-responsive, .media-responsive, .flex-search {
-  margin: 0 0 1.4em; }
-
-li ul, li ol {
-  margin: 0; }
-
-ul, ol {
-  padding-left: 0; }
-
-ul {
-  list-style: outside disc; }
-
-ol {
-  list-style-position: outside; }
-
-ol ol, ul ul {
-  margin-bottom: 0; }
-
-li {
-  margin: 0 0 0 1.5em; }
-
-ol ol li, ul ul li {
-  margin: 0 0 0 3em; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  padding-left: 1.5em; }
-
-abbr[title] {
-  cursor: help; }
-
-hr {
-  height: 1px;
-  border: 0;
-  color: #666;
-  background-color: #666; }
-
-img {
-  width: auto; }
-
-img, embed, object, video {
-  max-width: 100%;
-  height: auto; }
-
-figcaption {
-  font-size: 0.92em; }
-
-blockquote {
-  padding: 0 1.4em;
-  font-style: italic; }
-
-tt, code, kbd, samp, pre {
-  font-family: "Courier New", Courier, mono; }
-
-small, .small,
-.form-hint,
-label.error,
-.asset-meta {
-  font-size: 0.92em; }
-
-iframe {
-  display: block;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  width: 100%; }
-
-.optimale-zeilenlaenge {
-  /* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
-  color: red; }
-
-/* =anchors
+  /* =mixins
 --------------------------------------------------------------- */
-a img {
-  border: none; }
-
-#main:focus {
-  outline: none;
-  /* entfernt :focus des Skiplinks */ }
-
-/* =doc-anchors font-awesome
+  /* =webfonts
 --------------------------------------------------------------- */
-a[href^="http:"]::after, a[href^="https:"]::after,
-a.show-icon[href^="/"]::after, a.document-lst::after,
-a[href$=".csv"]::before, a[href$=".CSV"]::before,
-a[href$=".doc"]::before, a[href$=".DOC"]::before,
-a[href$=".docx"]::before, a[href$=".DOCX"]::before,
-a[href$=".docm"]::before, a[href$=".DOCM"]::before,
-a[href$=".dot"]::before, a[href$=".DOT"]::before,
-a[href$=".pdf"]::before, a[href$=".PDF"]::before,
-a[href$=".potm"]::before, a[href$=".POTM"]::before,
-a[href$=".potx"]::before, a[href$=".POTX"]::before,
-a[href$=".pps"]::before, a[href$=".PPS"]::before,
-a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
-a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
-a[href$=".ppt"]::before, a[href$=".PPT"]::before,
-a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
-a[href$=".pptx"]::before, a[href$=".PPTX"]::before,
-a[href$=".rss"]::before, a[href$=".RSS"]::before,
-a[href$=".rtf"]::before, a[href$=".RTF"]::before,
-a[href$=".txt"]::before, a[href$=".TXT"]::before,
-a[href$=".vcf"]::before, a[href$=".VCF"]::before,
-a[href$=".xlam"]::before, a[href$=".XLAM"]::before,
-a[href$=".xls"]::before, a[href$=".XLS"]::before,
-a[href$=".xlt"]::before, a[href$=".XLT"]::before,
-a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
-a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
-a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
-a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
-a[href$=".xltx"]::before, a[href$=".XLTX"]::before,
-a[href$=".zip"]::before, a[href$=".ZIP"]::before,
-a[href^="mailto:"]::before, a[data-email-link]::before,
-a[href^="https://www.google.com/maps/"]::before,
-a[href^="http://www.google.com/maps/"]::before,
-a[href^="https://maps.google.com/"]::before,
-a[href^="http://maps.google.com/"]::before,
-a.download-icn::before {
-  display: inline-block;
-  padding-right: 0.25em;
-  font: normal normal normal 1em/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0); }
-
-a[href$=".doc"]::before, a[href$=".DOC"]::before,
-a[href$=".docm"]::before, a[href$=".DOCM"]::before,
-a[href$=".docx"]::before, a[href$=".DOCX"]::before,
-a[href$=".dot"]::before, a[href$=".DOT"]::before,
-a[href$=".rtf"]::before, a[href$=".RTF"]::before {
-  content: "\f1c2"; }
-
-a[href$=".pdf"]::before, a[href$=".PDF"]::before {
-  content: "\f1c1"; }
-
-a[href$=".potm"]::before, a[href$=".POTM"]::before,
-a[href$=".potx"]::before, a[href$=".POTX"]::before,
-a[href$=".pps"]::before, a[href$=".PPS"]::before,
-a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
-a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
-a[href$=".ppt"]::before, a[href$=".PPT"]::before,
-a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
-a[href$=".pptx"]::before, a[href$=".PPTX"]::before {
-  content: "\f1c4"; }
-
-a[href$=".rss"]::before, a[href$=".RSS"]::before {
-  content: "\f09e"; }
-
-a[href$=".txt"]::before, a[href$=".TXT"]::before {
-  content: "\f0f6"; }
-
-a[href$=".vcf"]::before, a[href$=".VCF"]::before {
-  content: "\f007"; }
-
-a[href$=".csv"]::before, a[href$=".CSV"]::before,
-a[href$=".xlam"]::before, a[href$=".XLAM"]::before,
-a[href$=".xls"]::before, a[href$=".XLS"]::before,
-a[href$=".xlt"]::before, a[href$=".XLT"]::before,
-a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
-a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
-a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
-a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
-a[href$=".xltx"]::before, a[href$=".XLTX"]::before {
-  content: "\f1c3"; }
-
-a[href$=".zip"]::before, a[href$=".ZIP"]::before {
-  content: "\f1c6"; }
-
-a[href^="https://www.google.com/maps/"]:before,
-a[href^="http://www.google.com/maps/"]:before,
-a[href^="https://maps.google.com/"]:before,
-a[href^="http://maps.google.com/"]:before {
-  content: "\f041"; }
-
-a.download-icn::before {
-  content: "\f019"; }
-
-a[href^="mailto:"]::before,
-a[data-email-link]::before {
-  content: "\f003"; }
-
-a[href^="http:"]::after,
-a[href^="https:"]::after {
-  padding-right: 0;
-  padding-left: 0.25em;
-  content: "\f08e"; }
-
-a[href*=".mywebsite.ch"]::after,
-a[data-email-link]::after,
-a.no-icon::after, a.no-icon::before,
-.nav a[href]::after,
-.subnav a[href]::after,
-.footer a[href]::after {
-  padding: 0;
-  content: none; }
-
-/* =forms
+  *,
+  *:before,
+  *:after,
+  input[type="search"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  body {
+    font: 1em/1.5 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
+    background: url(../pictures/surfboardoffice.jpg) center 10em no-repeat fixed;
+    background-size: cover;
+    /*background: url(../pictures/coffe_and_agenda.jpg) no-repeat fixed center;*/ }
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0 0 0.75em;
+    line-height: 1.2; }
+  h1, .h1 {
+    font-size: 5em;
+    border-bottom: 1px solid #fff;
+    text-shadow: 1px 1px 0px #fff;
+    font-weight: 300; }
+  h2, .h2 {
+    font-size: 1.5em;
+    font-weight: 300; }
+  h3, .h3 {
+    font-size: 1.17em; }
+  h4, .h4 {
+    font-size: 1em; }
+  h5, .h5 {
+    margin: 0 0 0.4em;
+    font-size: 1em; }
+  h6, .h6 {
+    margin: 0 0 0.2em;
+    font-size: 1em; }
+  p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
+  .box, .table-responsive, .media-responsive, .flex-search {
+    margin: 0 0 1.4em; }
+  li ul, li ol {
+    margin: 0; }
+  ul, ol {
+    padding-left: 0; }
+  ul {
+    list-style: outside disc; }
+  ol {
+    list-style-position: outside; }
+  ol ol, ul ul {
+    margin-bottom: 0; }
+  li {
+    margin: 0 0 0 1.5em; }
+  ol ol li, ul ul li {
+    margin: 0 0 0 3em; }
+  dt {
+    font-weight: bold; }
+  dd {
+    padding-left: 1.5em; }
+  abbr[title] {
+    cursor: help; }
+  hr {
+    height: 1px;
+    border: 0;
+    color: #666;
+    background-color: #666; }
+  img {
+    width: auto; }
+  img, embed, object, video {
+    max-width: 100%;
+    height: auto; }
+  figcaption {
+    font-size: 0.92em; }
+  blockquote {
+    padding: 0 1.4em;
+    font-style: italic; }
+  tt, code, kbd, samp, pre {
+    font-family: "Courier New", Courier, mono; }
+  small, .small,
+  .form-hint,
+  label.error,
+  .asset-meta {
+    font-size: 0.92em; }
+  iframe {
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%; }
+  .optimale-zeilenlaenge {
+    /* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
+    color: red; }
+  /* =anchors
 --------------------------------------------------------------- */
-/*input[type=date],
+  a img {
+    border: none; }
+  #main:focus {
+    outline: none;
+    /* entfernt :focus des Skiplinks */ }
+  /* =doc-anchors font-awesome
+--------------------------------------------------------------- */
+  a[href^="http:"]::after, a[href^="https:"]::after,
+  a.show-icon[href^="/"]::after, a.document-lst::after,
+  a[href$=".csv"]::before, a[href$=".CSV"]::before,
+  a[href$=".doc"]::before, a[href$=".DOC"]::before,
+  a[href$=".docx"]::before, a[href$=".DOCX"]::before,
+  a[href$=".docm"]::before, a[href$=".DOCM"]::before,
+  a[href$=".dot"]::before, a[href$=".DOT"]::before,
+  a[href$=".pdf"]::before, a[href$=".PDF"]::before,
+  a[href$=".potm"]::before, a[href$=".POTM"]::before,
+  a[href$=".potx"]::before, a[href$=".POTX"]::before,
+  a[href$=".pps"]::before, a[href$=".PPS"]::before,
+  a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
+  a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
+  a[href$=".ppt"]::before, a[href$=".PPT"]::before,
+  a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
+  a[href$=".pptx"]::before, a[href$=".PPTX"]::before,
+  a[href$=".rss"]::before, a[href$=".RSS"]::before,
+  a[href$=".rtf"]::before, a[href$=".RTF"]::before,
+  a[href$=".txt"]::before, a[href$=".TXT"]::before,
+  a[href$=".vcf"]::before, a[href$=".VCF"]::before,
+  a[href$=".xlam"]::before, a[href$=".XLAM"]::before,
+  a[href$=".xls"]::before, a[href$=".XLS"]::before,
+  a[href$=".xlt"]::before, a[href$=".XLT"]::before,
+  a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
+  a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
+  a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
+  a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
+  a[href$=".xltx"]::before, a[href$=".XLTX"]::before,
+  a[href$=".zip"]::before, a[href$=".ZIP"]::before,
+  a[href^="mailto:"]::before, a[data-email-link]::before,
+  a[href^="https://www.google.com/maps/"]::before,
+  a[href^="http://www.google.com/maps/"]::before,
+  a[href^="https://maps.google.com/"]::before,
+  a[href^="http://maps.google.com/"]::before,
+  a.download-icn::before {
+    display: inline-block;
+    padding-right: 0.25em;
+    font: normal normal normal 1em/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0); }
+  a[href$=".doc"]::before, a[href$=".DOC"]::before,
+  a[href$=".docm"]::before, a[href$=".DOCM"]::before,
+  a[href$=".docx"]::before, a[href$=".DOCX"]::before,
+  a[href$=".dot"]::before, a[href$=".DOT"]::before,
+  a[href$=".rtf"]::before, a[href$=".RTF"]::before {
+    content: "\f1c2"; }
+  a[href$=".pdf"]::before, a[href$=".PDF"]::before {
+    content: "\f1c1"; }
+  a[href$=".potm"]::before, a[href$=".POTM"]::before,
+  a[href$=".potx"]::before, a[href$=".POTX"]::before,
+  a[href$=".pps"]::before, a[href$=".PPS"]::before,
+  a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
+  a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
+  a[href$=".ppt"]::before, a[href$=".PPT"]::before,
+  a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
+  a[href$=".pptx"]::before, a[href$=".PPTX"]::before {
+    content: "\f1c4"; }
+  a[href$=".rss"]::before, a[href$=".RSS"]::before {
+    content: "\f09e"; }
+  a[href$=".txt"]::before, a[href$=".TXT"]::before {
+    content: "\f0f6"; }
+  a[href$=".vcf"]::before, a[href$=".VCF"]::before {
+    content: "\f007"; }
+  a[href$=".csv"]::before, a[href$=".CSV"]::before,
+  a[href$=".xlam"]::before, a[href$=".XLAM"]::before,
+  a[href$=".xls"]::before, a[href$=".XLS"]::before,
+  a[href$=".xlt"]::before, a[href$=".XLT"]::before,
+  a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
+  a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
+  a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
+  a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
+  a[href$=".xltx"]::before, a[href$=".XLTX"]::before {
+    content: "\f1c3"; }
+  a[href$=".zip"]::before, a[href$=".ZIP"]::before {
+    content: "\f1c6"; }
+  a[href^="https://www.google.com/maps/"]:before,
+  a[href^="http://www.google.com/maps/"]:before,
+  a[href^="https://maps.google.com/"]:before,
+  a[href^="http://maps.google.com/"]:before {
+    content: "\f041"; }
+  a.download-icn::before {
+    content: "\f019"; }
+  a[href^="mailto:"]::before,
+  a[data-email-link]::before {
+    content: "\f003"; }
+  a[href^="http:"]::after,
+  a[href^="https:"]::after {
+    padding-right: 0;
+    padding-left: 0.25em;
+    content: "\f08e"; }
+  a[href*=".mywebsite.ch"]::after,
+  a[data-email-link]::after,
+  a.no-icon::after, a.no-icon::before,
+  .nav a[href]::after,
+  .subnav a[href]::after,
+  .footer a[href]::after {
+    padding: 0;
+    content: none; }
+  /* =forms
+--------------------------------------------------------------- */
+  /*input[type=date],
 input[type=datetime],
 input[type=datetime-local],
 input[type=email],
@@ -687,210 +603,173 @@ input[type=checkbox],
 input[type=radio] {
 	border: 0;
 	}*/
-.form-hint {
-  clear: both;
-  display: block;
-  width: 100%;
-  margin: .5em 0 0 0;
-  font-size: 0.92em;
-  color: #8a8a8a; }
-
-input:not[type=radio]:not[type=checkbox]:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px #2392f3 inset, 0 0 4px rgba(35, 146, 243, 0.5); }
-
-fieldset {
-  clear: both;
-  border: 1px solid #666;
-  padding: 1.5em; }
-
-legend {
-  display: table;
-  color: #000;
-  font-weight: 400;
-  font-size: 1.25em;
-  padding: 0 .25em;
-  margin-left: -.25em;
-  text-shadow: 0px 1px #fff; }
-
-/* =tables
+  .form-hint {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: .5em 0 0 0;
+    font-size: 0.92em;
+    color: #8a8a8a; }
+  input:not[type=radio]:not[type=checkbox]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #2392f3 inset, 0 0 4px rgba(35, 146, 243, 0.5); }
+  fieldset {
+    clear: both;
+    border: 1px solid #666;
+    padding: 1.5em; }
+  legend {
+    display: table;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.25em;
+    padding: 0 .25em;
+    margin-left: -.25em;
+    text-shadow: 0px 1px #fff; }
+  /* =tables
 --------------------------------------------------------------- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-caption {
-  margin-bottom: 0.5em;
-  text-align: left;
-  font-weight: bold; }
-
-table th,
-table td {
-  vertical-align: top;
-  border-bottom: 1px solid #dcdfde;
-  padding: 5px 10px; }
-
-table th {
-  border-bottom-width: 2px;
-  text-align: left;
-  font-weight: bold;
-  color: #23343b; }
-
-table tbody th {
-  border-bottom-width: 1px; }
-
-table tfoot tr:first-child td {
-  border-top: 2px solid #dcdfde; }
-
-table tfoot tr:last-child td {
-  border-top: 2px solid #dcdfde;
-  border-bottom: 3px double #dcdfde;
-  font-weight: bold; }
-
-table.auto {
-  width: auto; }
-
-table.vertical {
-  border-top: 1px solid #dcdfde; }
-
-table.vertical th {
-  border-bottom-width: 1px; }
-
-.tbl-no {
-  text-align: right; }
-
-/*=zebras & hover
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  caption {
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-weight: bold; }
+  table th,
+  table td {
+    vertical-align: top;
+    border-bottom: 1px solid #dcdfde;
+    padding: 5px 10px; }
+  table th {
+    border-bottom-width: 2px;
+    text-align: left;
+    font-weight: bold;
+    color: #23343b; }
+  table tbody th {
+    border-bottom-width: 1px; }
+  table tfoot tr:first-child td {
+    border-top: 2px solid #dcdfde; }
+  table tfoot tr:last-child td {
+    border-top: 2px solid #dcdfde;
+    border-bottom: 3px double #dcdfde;
+    font-weight: bold; }
+  table.auto {
+    width: auto; }
+  table.vertical {
+    border-top: 1px solid #dcdfde; }
+  table.vertical th {
+    border-bottom-width: 1px; }
+  .tbl-no {
+    text-align: right; }
+  /*=zebras & hover
 --------------------------------------------------------------- */
-table.zebra tbody tr:nth-child(even),
-.zebra li:nth-child(even) {
-  background-color: #f8f8f8; }
-
-table.hover tbody tr:hover,
-.hover li:hover {
-  background-color: #f7fbff; }
-
-/*=responsive tables & media
+  table.zebra tbody tr:nth-child(even),
+  .zebra li:nth-child(even) {
+    background-color: #f8f8f8; }
+  table.hover tbody tr:hover,
+  .hover li:hover {
+    background-color: #f7fbff; }
+  /*=responsive tables & media
 --------------------------------------------------------------- */
-.table-responsive {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch; }
-
-.table-responsive > table {
-  margin-bottom: 0; }
-
-.media-responsive {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden; }
-
-.media-responsive iframe,
-.media-responsive object,
-.media-responsive embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-/*=microformats
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; }
+  .table-responsive > table {
+    margin-bottom: 0; }
+  .media-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+  .media-responsive iframe,
+  .media-responsive object,
+  .media-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  /*=microformats
 --------------------------------------------------------------- */
-.vcard .region,
-.vcard .country-name,
-.vcard .url {
-  display: none; }
-
-/* =global classes
+  .vcard .region,
+  .vcard .country-name,
+  .vcard .url {
+    display: none; }
+  /* =global classes
 --------------------------------------------------------------- */
-.fa.none,
-.none {
-  display: none; }
-
-.invis,
-.sr {
-  position: absolute;
-  display: inline;
-  top: -1000px;
-  left: -1000px;
-  width: 0;
-  height: 0;
-  overflow: hidden; }
-
-.right {
-  float: right; }
-
-.left {
-  float: left; }
-
-.clear {
-  clear: both; }
-
-.clearfix:after,
-.cf:after,
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.alignleft,
-.alignright,
-.aligncenter {
-  max-width: 50%;
-  /* mit .col-Grid-Breiten harmnonisieren */
-  margin: 1.4em;
-  /* mit .col-Grid-Margin harmnonisieren */ }
-
-.alignleft {
-  float: left;
-  margin-top: 0;
-  margin-left: 0; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto; }
-
-.alignright {
-  float: right;
-  margin-top: 0;
-  margin-right: 0; }
-
-.reset,
-.reset li,
-nav ul,
-nav li {
-  list-style: none outside none;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 0; }
-
-nav ul {
-  margin-bottom: 0; }
-
-.nobr {
-  white-space: nowrap; }
-
-.box {
-  border: 1px solid #666;
-  padding: 1.4em;
-  background-color: #f6f4f3; }
-
-.box > *:last-child,
-fieldset > *:last-child {
-  margin-bottom: 0; }
-
-/* =buttons
+  .fa.none,
+  .none {
+    display: none; }
+  .invis,
+  .sr {
+    position: absolute;
+    display: inline;
+    top: -1000px;
+    left: -1000px;
+    width: 0;
+    height: 0;
+    overflow: hidden; }
+  .right {
+    float: right; }
+  .left {
+    float: left; }
+  .clear {
+    clear: both; }
+  .clearfix:after,
+  .cf:after,
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .alignleft,
+  .alignright,
+  .aligncenter {
+    max-width: 50%;
+    /* mit .col-Grid-Breiten harmnonisieren */
+    margin: 1.4em;
+    /* mit .col-Grid-Margin harmnonisieren */ }
+  .alignleft {
+    float: left;
+    margin-top: 0;
+    margin-left: 0; }
+  .aligncenter {
+    clear: both;
+    display: block;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto; }
+  .alignright {
+    float: right;
+    margin-top: 0;
+    margin-right: 0; }
+  .reset,
+  .reset li,
+  nav ul,
+  nav li {
+    list-style: none outside none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0; }
+  nav ul {
+    margin-bottom: 0; }
+  .nobr {
+    white-space: nowrap; }
+  .box {
+    border: 1px solid #666;
+    padding: 1.4em;
+    background-color: #f6f4f3; }
+  .box > *:last-child,
+  fieldset > *:last-child {
+    margin-bottom: 0; }
+  /* =buttons
 --------------------------------------------------------------- */
-/*.btn, .btn:link, .btn:visited {
+  /*.btn, .btn:link, .btn:visited {
 	display: inline-block;
 	border: 0;
 	padding: .5em 1em;
@@ -932,229 +811,219 @@ fieldset > *:last-child {
 .btn--fullwidth {
 	width: 100%;
 	}*/
-button {
-  background: #c0c0c0; }
-
-/* =grid
+  button {
+    background: #c0c0c0; }
+  /* =grid
 --------------------------------------------------------------- */
-.row {
-  clear: both;
-  margin: 1.4em 0; }
-
-[class*="col-"] {
-  position: relative;
-  float: left;
-  margin-left: 0;
-  /* adapt to grid width */
-  min-height: 1px; }
-
-[class*="col-"]:first-child {
-  margin-left: 0; }
-
-.col-1 {
-  width: 8.333333333333332%; }
-
-.col-2 {
-  width: 16.666666666666664%; }
-
-.col-3 {
-  width: 25%; }
-
-.col-4 {
-  width: 33.33333333333333%; }
-
-.col-5 {
-  width: 41.66666666666667%; }
-
-.col-6 {
-  width: 50%; }
-
-.col-7 {
-  width: 58.333333333333336%; }
-
-.col-8 {
-  width: 66.66666666666666%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-10 {
-  width: 83.33333333333334%; }
-
-.col-11 {
-  width: 91.66666666666666%; }
-
-.col-12 {
-  width: 100%; }
-
-/*  basics.css // additional classes 
+  .row {
+    clear: both;
+    margin: 1.4em 0; }
+  [class*="col-"] {
+    position: relative;
+    float: left;
+    margin-left: 0;
+    /* adapt to grid width */
+    min-height: 1px; }
+  [class*="col-"]:first-child {
+    margin-left: 0; }
+  .col-1 {
+    width: 8.333333333333332%; }
+  .col-2 {
+    width: 16.666666666666664%; }
+  .col-3 {
+    width: 25%; }
+  .col-4 {
+    width: 33.33333333333333%; }
+  .col-5 {
+    width: 41.66666666666667%; }
+  .col-6 {
+    width: 50%; }
+  .col-7 {
+    width: 58.333333333333336%; }
+  .col-8 {
+    width: 66.66666666666666%; }
+  .col-9 {
+    width: 75%; }
+  .col-10 {
+    width: 83.33333333333334%; }
+  .col-11 {
+    width: 91.66666666666666%; }
+  .col-12 {
+    width: 100%; }
+  /*  basics.css // additional classes 
 --------------------------------------------------------------- */
-a[href^="https://www.google.com/maps/"]::before,
-a[href^="http://www.google.com/maps/"]::before,
-a[href^="https://maps.google.com/"]::before,
-a[href^="http://maps.google.com/"]::before,
-a.download-icn::before
-a[href^="https://www.google.com/maps/"]:before,
-a[href^="http://www.google.com/maps/"]:before,
-a[href^="https://maps.google.com/"]:before,
-a[href^="http://maps.google.com/"]:before {
-  content: "\f041"; }
-
-a.download-icn::before {
-  content: "\f019"; }
-
-/* =global classes
+  a[href^="https://www.google.com/maps/"]::before,
+  a[href^="http://www.google.com/maps/"]::before,
+  a[href^="https://maps.google.com/"]::before,
+  a[href^="http://maps.google.com/"]::before,
+  a.download-icn::before a[href^="https://www.google.com/maps/"]:before,
+  a[href^="http://www.google.com/maps/"]:before,
+  a[href^="https://maps.google.com/"]:before,
+  a[href^="http://maps.google.com/"]:before {
+    content: "\f041"; }
+  a.download-icn::before {
+    content: "\f019"; }
+  /* =global classes
 --------------------------------------------------------------- */
-.none {
-  display: none; }
-
-.nomargin,
-[class*="col-"].nomargin {
-  margin: 0; }
-
-.nopadding,
-[class*="col-"].nopadding {
-  padding: 0; }
-
-.right,
-[class*="col-"].right {
-  float: right; }
-
-.left,
-[class*="col-"].left {
-  float: left; }
-
-/* new css-y comment to check compiled css  */
-/* =colors
---------------------------------------------------------------- */
-/* =mixins
---------------------------------------------------------------- */
-/* =global
---------------------------------------------------------------- */
-body {
-  /* test compiler 3 */ }
-
-.wrap {
-  max-width: 50em;
-  margin: 0 auto; }
-
-/* =header
---------------------------------------------------------------- */
-header {
-  background: rgba(255, 255, 255, 0.9);
-  width: 100%;
-  box-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.35); }
-
-.titlecontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 2em 0; }
-  .titlecontainer h1,
-  .titlecontainer h2 {
+  .none {
+    display: none; }
+  .nomargin,
+  [class*="col-"].nomargin {
     margin: 0; }
-
-/* =main
+  .nopadding,
+  [class*="col-"].nopadding {
+    padding: 0; }
+  .right,
+  [class*="col-"].right {
+    float: right; }
+  .left,
+  [class*="col-"].left {
+    float: left; }
+  /* new css-y comment to check compiled css  */
+  /* =functions
 --------------------------------------------------------------- */
-main {
-  padding-top: 2vh; }
-
-/* =component "to-do"
+  /* =colors
 --------------------------------------------------------------- */
-.form-row.cf label {
-  display: block; }
-
-/* =global ---------------- */
-.todo {
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 0 5000px rgba(255, 255, 255, 0.5); }
-  .todo__container {
-    padding: 1em;
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    margin-bottom: 1.4em;
-    -webkit-border-radius: 0.25em;
-    -moz-border-radius: 0.25em;
-    -ms-border-radius: 0.25em;
-    border-radius: 0.25em; }
-
-/* =form / todo-add ---------------- */
-.form {
-  /* Add to-dos ---------------- */
-  /* clear all tasks ---------------- */ }
-  .form__element-input {
-    padding: .35em .25em;
-    font-size: 1.5em;
-    font-family: 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
-    font-weight: 300;
-    box-shadow: 0; }
-  .form__element-btn {
-    display: inline-block;
-    padding: .5em 1em;
-    color: #fff;
-    text-decoration: none;
-    -webkit-border-radius: 0.25em;
-    -moz-border-radius: 0.25em;
-    -ms-border-radius: 0.25em;
-    border-radius: 0.25em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    text-align: center;
-    line-height: normal;
-    cursor: pointer; }
-    .form__element-btn:active {
-      box-shadow: inset 0 2px 0.25em rgba(0, 0, 0, 0.35); }
-    .form__element-btn:hover, .form__element-btn:focus {
-      /* todo */ }
-    .form__element-btn[type="reset"]:hover {
-      background: #b2202e; }
-  .form__element [type=checkbox]:hover {
-    cursor: pointer; }
-  .form--todo {
-    margin-right: .5rem; }
-  .form .form-func {
-    display: flex;
-    justify-content: space-between; }
-  .form__element-btn {
-    width: 45%;
-    margin-left: .5rem; }
-    .form__element-btn--add {
-      background: #4ecc8d; }
-      .form__element-btn--add:hover, .form__element-btn--add:focus {
-        background: #3a9954; }
-  .form .form-row {
-    display: flex;
-    flex-direction: row; }
-  .form__element-btn--rm_all {
+  /* =mixins
+--------------------------------------------------------------- */
+  /* =global
+--------------------------------------------------------------- */
+  body {
+    /* test compiler 3 */ }
+  .wrap {
+    max-width: 50em;
+    margin: 0 auto; }
+  /* =header
+--------------------------------------------------------------- */
+  header {
+    background-color: white;
     width: 100%;
-    color: #fff;
-    background: #cc3935; }
-    .form__element-btn--rm_all:hover, .form__element-btn--rm_all:focus {
-      background: #b2202e; }
-
-/* List of to-dos  ---------------- */
-.task .form-row {
-  margin-bottom: 0;
-  padding: .5em .25em;
-  display: block; }
-
-.task__entry:hover .task__entry-rm {
-  display: block; }
-
-.task__entry-checkbox {
-  text-align: center; }
-  .task__entry-checkbox input:hover {
-    cursor: pointer; }
-
-.task__entry-time {
-  text-align: right; }
-
-.task__entry-rm {
-  text-align: center;
-  color: #b2202e;
-  display: none; }
-  .task__entry-rm:hover, .task__entry-rm:focus {
-    color: #cc3935;
-    cursor: pointer; }
+    box-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.35); }
+  .titlecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2em 0; }
+    .titlecontainer h1,
+    .titlecontainer h2 {
+      margin: 0; }
+  /* =main
+--------------------------------------------------------------- */
+  main {
+    padding-top: 2vh; }
+  /* = "to-do"
+--------------------------------------------------------------- */
+  .form-row.cf label {
+    display: block; }
+  /* =global ---------------- */
+  .todo {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 5000px rgba(255, 255, 255, 0.5); }
+    .todo__container {
+      padding: 1em;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      margin-bottom: 1.4em;
+      -webkit-border-radius: 0.25em;
+      -moz-border-radius: 0.25em;
+      -ms-border-radius: 0.25em;
+      border-radius: 0.25em; }
+  /* =form / todo-add ---------------- */
+  .form {
+    /* Add to-dos ---------------- */
+    /* clear all tasks ---------------- */ }
+    .form__element-input {
+      padding: .35em .25em;
+      font-size: 1.5em;
+      font-family: 'Source Sans Pro', Arial, Helvetica, Geneva, sans-serif;
+      font-weight: 300;
+      box-shadow: 0; }
+    .form__element-btn {
+      display: inline-block;
+      padding: .5em 1em;
+      color: #fff;
+      text-decoration: none;
+      -webkit-border-radius: 0.25em;
+      -moz-border-radius: 0.25em;
+      -ms-border-radius: 0.25em;
+      border-radius: 0.25em;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      text-align: center;
+      line-height: normal;
+      cursor: pointer; }
+      .form__element-btn:active {
+        box-shadow: inset 0 2px 0.25em rgba(0, 0, 0, 0.35); }
+      .form__element-btn:hover, .form__element-btn:focus {
+        /* todo */ }
+      .form__element-btn[type="reset"]:hover {
+        background: #b2202e; }
+    .form__element [type=checkbox]:hover {
+      cursor: pointer; }
+    .form__element-input-todo {
+      margin-right: .5rem; }
+    .form .form-func {
+      display: flex;
+      justify-content: space-between; }
+    .form__element-btn {
+      width: 45%;
+      margin-left: .5rem; }
+      .form__element-btn--add {
+        background: #4ecc8d; }
+        .form__element-btn--add:hover, .form__element-btn--add:focus {
+          background: #3a9954; }
+    .form .form-row {
+      display: flex;
+      flex-direction: row; }
+    .form__element-btn--rm_all {
+      width: 100%;
+      color: #fff;
+      background: #cc3935; }
+      .form__element-btn--rm_all:hover, .form__element-btn--rm_all:focus {
+        background: #b2202e; }
+  /* List of to-dos  ---------------- */
+  .task .form-row {
+    margin-bottom: 0;
+    padding: .5em .25em;
+    display: block; }
+  .task__entry:hover .task__entry-rm {
+    display: block; }
+  .task__entry-checkbox {
+    text-align: center; }
+    .task__entry-checkbox input:hover {
+      cursor: pointer; }
+  .task__entry-time {
+    text-align: right; }
+  .task__entry-rm {
+    text-align: center;
+    color: #b2202e;
+    display: none; }
+    .task__entry-rm:hover, .task__entry-rm:focus {
+      color: #cc3935;
+      cursor: pointer; }
+  /* testing and documentation  ---------------- */
+  .test .box {
+    float: left;
+    margin-left: 2%; }
+    .test .box:first-child {
+      margin-left: 0; }
+    .test .box--s {
+      width: 33.33333%; }
+    .test .box--m {
+      width: 55.55556%; }
+    .test .box--fw {
+      width: 100%;
+      clear: both; }
+  .test .extend-testing .message, .test .extend-testing .test-extend {
+    color: red; }
+  .test .extend-testing .test-extend {
+    background: yellow; }
+  .test .placeholder-testing .main-title, .test .placeholder-testing .sub-title {
+    font-family: Courier, serif;
+    color: green; }
+  .test .placeholder-testing .main-title {
+    text-decoration: underline; }
+  .test .placeholder-testing .sub-title {
+    font-family: sans-serif; } }
 
 @media only screen and (max-width: 48em) {
   /* 768/16 */ }
@@ -1195,3 +1064,168 @@ main {
 	--------------------------------------------------------------- */
   /* =footer
 	--------------------------------------------------------------- */ }
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font: 12pt/1.5 Georgia, "Times New Roman", Times, Garamond, serif;
+    color: #000;
+    background-color: #fff;
+    background-image: none; }
+  /* =elemente ausblenden, die im druck nicht erscheinen sollen
+--------------------------------------------------------------- */
+  nav[role="navigation"], form,
+  .accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .print-hidden, .breadcrumb,
+  .region, .country-name, .url, .none {
+    display: none; }
+  /* =elemente ausblenden, die im druck  explizit erscheinen sollen
+--------------------------------------------------------------- */
+  .print-visible {
+    display: block; }
+  /* =typo
+--------------------------------------------------------------- */
+  a:link {
+    color: #9d9d9d;
+    text-decoration: underline; }
+  /* fügt in modernen Browsern den ausgeschriebenen Link hinter dem Anchor ein
+a:link:after, 
+a:link:visited:after {
+  color: #9d9d9d;
+  content: "(Link auf <" attr(href) ">)";
+  padding-left: 0.5em;
+  }
+*/
+  h1, h2, h3, h4, h5, h6, p, ul, ol, table, caption, address, dl, blockquote, fieldset, hr {
+    margin-top: 0;
+    color: #000; }
+  p, ul, ol, table, caption, address, dl, blockquote, fieldset, hr, .box {
+    margin-bottom: 1.5em; }
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    page-break-after: avoid; }
+  h1, .h1 {
+    margin-bottom: 20pt;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8pt;
+    font-size: 20pt;
+    line-height: 22pt; }
+  h2, .h2 {
+    margin-bottom: 9pt;
+    font-size: 16pt;
+    line-height: 18pt; }
+  h3, .h3 {
+    margin-bottom: 8pt;
+    font-size: 14pt;
+    line-height: 16pt; }
+  h4, .h4 {
+    margin-bottom: 8pt;
+    font-size: 12pt;
+    line-height: 16pt; }
+  h5, h6,
+  .h5, .h6 {
+    margin-bottom: 0;
+    font-size: 12pt;
+    line-height: 16pt; }
+  blockquote {
+    font-size: 14pt;
+    font-style: italic; }
+  hr {
+    color: #000;
+    background-color: #000;
+    height: 1px;
+    border: 0; }
+  ul, ol, dl {
+    page-break-inside: avoid; }
+  ul.sitemap {
+    page-break-inside: auto; }
+  img {
+    border: 0;
+    max-width: 100%; }
+  figure {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0; }
+  figcaption {
+    font-size: 10pt;
+    font-style: italic; }
+  small {
+    font-size: 10pt; }
+  /* =tables
+--------------------------------------------------------------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 1px solid #000;
+    padding: 0; }
+  caption {
+    margin-bottom: 8pt;
+    font-size: 14pt;
+    line-height: 16pt;
+    font-weight: bold;
+    text-align: left; }
+  th {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 2pt 15pt 2pt 0;
+    font-weight: bold;
+    text-align: left; }
+  td {
+    padding: 2pt 15pt 2pt 0;
+    vertical-align: top; }
+  tfoot td {
+    font-weight: bold;
+    border-top: 1px solid #000; }
+  table.auto {
+    width: auto; }
+  .tbl-no {
+    text-align: right; }
+  /* =global classes
+--------------------------------------------------------------- */
+  .box {
+    border: 1px solid #000;
+    padding: 1.4em; }
+  .box > *:last-child,
+  fieldset > *:last-child {
+    margin-bottom: 0; }
+  .reset,
+  .reset li {
+    list-style: none outside none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0; }
+  .nobr {
+    white-space: nowrap; }
+  .alignleft, .alignright {
+    max-width: 33%; }
+  .alignleft {
+    float: left;
+    margin: 0 1.5em 1.5em 0; }
+  .aligncenter {
+    clear: both;
+    display: block;
+    margin: 1.5em auto; }
+  .alignright {
+    float: right;
+    margin: 0 0 1.5em 1.5em; }
+  /* =dokumente
+--------------------------------------------------------------- */
+  a.pdf {
+    background-image: url(/icons/module/Dokument3_0/icon_pdf_klein.gif); }
+  a.doc, a.rtf {
+    background-image: url(/icons/module/Dokument3_0/icon_word_klein.gif); }
+  a.xls {
+    background-image: url(/icons/module/Dokument3_0/icon_excel_klein.gif); }
+  a.pps {
+    background-image: url(/icons/module/Dokument3_0/icon_powerpoint_klein.gif); }
+  a.zip {
+    background-image: url(/icons/module/Dokument3_0/icon_zip_klein.gif); }
+  a.document {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 0; } }

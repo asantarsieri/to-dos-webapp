@@ -4,26 +4,21 @@ Date		: 14.11.2016
 Author		: asantarsieri
 Purpose		: framework / neutral boilerplate
 *********************************************************************************** */
-// @import url(normalize.css);
-// @import url(basics.css);
-// @import url(expanded basics.css);
-// @import url(application.css);
-// @import url(layout.css);
-// @import url(responsive.css);
-// @import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
 
 @media screen {
-	@import 'normalize';
-	@import 'basics';
-	@import 'expanded_basics';
-	@import 'application';
-	@import 'layout';
-	@import 'responsive';
 	@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
+	@import 'partials/normalize';
+	@import 'partials/variables';
+	@import 'partials/mixins';
+	@import 'partials/basics';
+	@import 'partials/expanded_basics';
+	@import 'partials/application';
+	@import 'partials/layout';
+	@import 'partials/responsive';
 }
 
 @media print {
 
-	@import "print";
+	@import "partials/print";
 
 }

@@ -1,0 +1,13 @@
+/* =mixins
+--------------------------------------------------------------- */
+
+@mixin border-radius($radius: .25em) {
+	// .25em = default
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin bg-white($coefficient: .9) {
+	background-color: rgba(255, 255, 255, $coefficient);
+}
