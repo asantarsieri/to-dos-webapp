@@ -23,6 +23,9 @@ Current version is **v0.2.0**
 * gulp-sass: 2.3.2
 
 ## Changelog
+### v0.2.0
+* html with BEM
+* new classes and sass improvements
 
 ### v0.1.1
 * sass with dependencies
