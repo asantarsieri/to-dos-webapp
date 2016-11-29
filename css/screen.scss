@@ -12,11 +12,18 @@ Purpose		: framework / neutral boilerplate
 // @import url(responsive.css);
 // @import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
 
+@media screen {
+	@import 'normalize';
+	@import 'basics';
+	@import 'expanded_basics';
+	@import 'application';
+	@import 'layout';
+	@import 'responsive';
+	@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
+}
 
-@import 'normalize';
-@import 'basics';
-@import 'expanded_basics';
-@import 'application';
-@import 'layout';
-@import 'responsive';
-@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
+@media print {
+
+	@import "print";
+
+}
