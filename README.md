@@ -23,6 +23,12 @@ Current version is **v0.2.0**
 * gulp-sass: 2.3.2
 
 ## Changelog
+### v0.2.1
+* sass improvements
+* new section for testing
+* sass testing of splitting, includes, extend, placeholder
+* some gulpfile adjustments (ignored by git)
+
 ### v0.2.0
 * html with BEM
 * new classes and sass improvements
