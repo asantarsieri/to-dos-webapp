@@ -16,7 +16,7 @@ This webapp will be further developed and can be used to learn and use stuff lik
 * … and other relevant tools for frontend development
 
 ## Version
-Current version is **v0.2.0**
+Current version is **v0.2.1**
 
 ## Dependencies
 * gulp: ^3.9.1
