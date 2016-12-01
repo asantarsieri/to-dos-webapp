@@ -15,12 +15,12 @@ This webapp will be further developed and can be used to learn and use stuff lik
 * MySQL
 * … and other relevant tools for frontend development
 
-## Version
-Current version is **v0.2.1**
-
 ## Dependencies
 * gulp: ^3.9.1
 * gulp-sass: 2.3.2
+
+## Version
+Current version is **v0.3.0**
 
 ## Changelog
 ### v0.3.0
