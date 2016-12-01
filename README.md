@@ -23,6 +23,15 @@ Current version is **v0.2.1**
 * gulp-sass: 2.3.2
 
 ## Changelog
+### v0.3.0
+* additional gulp dependencies
+* added gulp stuff
+** sourcemaps
+** new tast 'serve'
+** minifyer
+** autoprefixer
+** browser-sync
+
 ### v0.2.1
 * sass improvements
 * new section for testing
