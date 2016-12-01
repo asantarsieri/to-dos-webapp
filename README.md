@@ -26,11 +26,11 @@ Current version is **v0.2.1**
 ### v0.3.0
 * additional gulp dependencies
 * added gulp stuff
-** sourcemaps
-** new tast 'serve'
-** minifyer
-** autoprefixer
-** browser-sync
+ * sourcemaps
+ * new task 'serve'
+ * minifyer
+ * autoprefixer
+ * browser-sync
 
 ### v0.2.1
 * sass improvements
