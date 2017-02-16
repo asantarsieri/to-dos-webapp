@@ -7,6 +7,7 @@
 build
 bower_components
 node_modules
+Icon?
 
 
 # Created by https://www.gitignore.io/api/macos,windows,wordpress,node,git,espresso,sublimetext,phpstorm,codekit,tower,bower,webstorm,dreamweaver,dropbox,emacs,vim,jetbrains,grunt,microsoftoffice,node,osx,sass,sublimetext,synology,textmate,xcode
